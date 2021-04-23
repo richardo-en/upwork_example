@@ -179,5 +179,3 @@ app.config['UPLOADED_PHOTOS_DEST'] = 'static/images'
 configure_uploads(app, photos)
 
 
-if __name__ == "__main__":
-  app.run(port= 2450 , debug=True)
