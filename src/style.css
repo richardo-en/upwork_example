@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    
+    
+    /* THIS IS ALL FOR NAVIGATIONAL BAR */
+    /* THIS IS ALL FOR NAVIGATIONAL BAR */
+    /* THIS IS ALL FOR NAVIGATIONAL BAR */
+    .navig{
+        @apply w-full text-center py-4 border-b-2 border-black  text-lg lg:text-2xl text-black md:text-white;
+    }  
+    .navig:hover{
+        @apply hover:border-purple-500 hover:bg-purple-100 ;
+    } 
+    .navig_mob{
+        @apply block py-2 px-4 border-b-2 border-white;
+    }
+    .navig_mob:hover{
+        @apply hover:bg-gray-100;
+    }
+    .navig_bot{
+        @apply text-white bg-blue_nav lg:rounded-t-2xl w-full text-center py-4 lg:border-t-2 lg:border-r-2 border-black text-lg lg:text-2xl;
+    }
+    .navig_bot:hover{
+        @apply hover:border-purple-500 hover:bg-purple-300;
+    }
+
+
+
+    /* THIS IS ALL FOR HOME SITE */
+    /* THIS IS ALL FOR HOME SITE */
+    /* THIS IS ALL FOR HOME SITE */
+    .home_text{
+        @apply text-2xl mb-12;
+    }
+    .home_text_left{
+        @apply col-start-1 col-span-5 mx-5 md:col-start-1 md:col-span-3 tracking-widest my-12 bg-yellow-300 p-4 ml-5 border-2 border-white rounded-md text-center ;
+    }
+    .home_text_left:hover{
+        @apply hover:bg-yellow-400 hover:border-yellow-800;
+    }
+    .home_text_right{
+        @apply col-start-1 col-span-5 mx-5 md:col-end-6 md:col-span-3 bg-gray-800 tracking-widest text-white my-12 p-4 mr-5 border-2 border-white rounded-md text-center ;
+    }
+    .home_text_right:hover{
+        @apply hover:bg-gray-900 hover:border-yellow-400;
+    }
+
+    /* THIS IS ALL FOR ARTICLE SITE */
+    /* THIS IS ALL FOR ARTICLE SITE */
+    /* THIS IS ALL FOR ARTICLE SITE */
+       
+    .art-section{
+        @apply col-span-1 rounded-lg border-4 border-blue-400 mx-6 my-6 bg-blue-300;
+    }
+    .art-section:hover{
+        @apply hover:border-blue-600 ;
+    }
+
+    /* THIS IS ALL FOR ADMIN SITE */
+    /* THIS IS ALL FOR ADMIN SITE */
+    /* THIS IS ALL FOR ADMIN SITE */
+
+    .adm-section{
+        @apply mx-5 mt-3 lg:grid lg:grid-cols-3 justify-center bg-gray-300 rounded-lg border-2 border-gray-200 text-2xl;
+    }
+    .adm-section{
+        @apply hover:border-gray-300;
+    }
+
+    /* THIS IS ALL FOR DESCRIPTION SITE */
+    /* THIS IS ALL FOR DESCRIPTION SITE */
+    /* THIS IS ALL FOR DESCRIPTION SITE */
+
+    .des-tit{
+        @apply font-mono text-xl xl:text-3xl;
+    }     
+    .des-text{
+        @apply tracking-widest w-2/3 mb-6 xl:text-2xl;
+    }  
+
+    .des-text-right{
+        @apply text-right bg-gray-200 rounded-lg sm:rounded-l-full border-t-4 border-b-4 border-l-4 border-gray-300;
+    }
+    .des-text-right:hover{
+        @apply hover:bg-gray-300;
+    }
+    
+    .des-text-left{
+        @apply bg-gray-200 rounded-lg  sm:rounded-r-full border-t-4 border-b-4 border-r-4 border-gray-300;
+    }
+    .des-text-left:hover{
+        @apply hover:bg-gray-300;
+    }
+
+    /* THIS ARE JUST COMPONENTS LIKE BUTTON TITLES ETC. */
+    /* THIS ARE JUST COMPONENTS LIKE BUTTON TITLES ETC. */
+    /* THIS ARE JUST COMPONENTS LIKE BUTTON TITLES ETC. */
+
+    .blue-btn{
+        @apply my-2 lg:my-5 bg-blue-200 rounded-lg border-2 border-blue-300 p-3;
+    }
+    .blue-btn:hover{
+        @apply hover:bg-blue-300  ;
+    }
+    .title{
+        @apply text-center text-lg lg:text-3xl tracking-widest ;
+    }
+}
+    
