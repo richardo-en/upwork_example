@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h3 class="title my-10"> Articles </h2>
+    {% if articles %}  
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+            {% for article in articles.items %}
+                <a href="{{url_for('text_example' , id = article.id )}}">
+                    <section class="art-section">  
+                    <header>
+                        <img src="/static/images/{{ article.image }}" alt="{{ article.image }}" class="opacity-90 hover:opacity-100">
+                    </header>
+                    <h3 class="text-center text-xl font-bold">{{ article.title }}</h3>
+                    <p>
+                        <h3 class="p-2 text-lg text-center">{{ article.text }}...</h3>
+                    </p>
+                    <footer>
+                        
+                    </footer>
+                    </section> 
+                </a>
+            {% endfor %}
+        </div>    
+    {% endif %}
+    <div class="flex flex-row justify-center lg:mb-10 mb-28">
+        {% for page_num in articles.iter_pages(left_edge = 1 , right_edge = 1 , left_current = 1 , right_current = 2 ) %}
+            {% if page_num %}
+                {% if articles.page == page_num %}
+                    <button class="blue-btn bg-blue-400 border-blue-500 w-1/8"><a href="{{ url_for('article' , page=page_num)  }}" class="text-xl  px-4 py-6  ">{{ page_num }}</a></button>
+                {% else %}
+                    <button class="blue-btn w-1/8"><a href="{{ url_for('article' , page=page_num)  }}" class="text-xl  px-4 py-6  ">{{ page_num }}</a></button>
+                {% endif %}
+            {% else %}
+                ...
+            {% endif %}
+        {% endfor %}
+    </div>         
+
+    
+{% endblock %}

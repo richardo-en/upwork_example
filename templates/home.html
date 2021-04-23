@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block content %}    
+<div class="grid grid-cols-5 overflow-hidden ">
+
+    <div class="col-span-5 flex justify-center mt-0 ">
+        <video autoplay muted loop class="w-11/12 " >
+            <source src="{{ url_for('static' , filename='ragnar.mp4') }}" type="video/mp4"  >
+            
+        </video>    
+        <div class="absolute flex justify-center my-16 sm:my-32 md:my-64">
+            <p class="sm:text-4xl md:text-5xl tracking-widest text-white"> This is Home Page!</p></div>
+    </div>   
+
+        <section class="home_text_left">
+            <h3 class="home_text">Something about me!</h3>
+            <p>If you are on this site you are propably looking for someone who can make you website. I m 19 year's old boy called Richard
+            and i m programming in my free time with flask. It is a year of experience with html css/tailwind python
+            sqlite3.</p>
+        </section>
+
+        <br>
+        <section class="home_text_right">
+            <h3 class="home_text ">About site?</h3>
+            <p>Defently checkout about site where is desribed how does site works. You can read over there interesting things about site
+                also i m going to make a video about how does it all works and show you that.
+            </p>
+        </section>    
+        <section class="home_text_left ">
+            <h3 class="home_text">Projects</h3>
+            <p>I love new project where i can test and try many new things. Also i love watching some series. My favourite one is right now vikings whitch i finished few months ago
+                and love them they are really great. Also i do recommend you to watch peaky blinders and breaking bad. I didnt watch game of thrones but maybe one day.
+            </p>
+        </section> 
+        <section class="home_text_right ">
+            <h3 class="home_text ">This is made just to show you how can it looks</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae turpis lacus. Proin porta porttitor venenatis. 
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames 
+                ac turpis egestas. Donec dapibus sagittis neque ut feugiat. Donec lobortis malesuada congue. Phasellus gravida vel dolor id faucibus. Mauris ut sem eu eros lobortis 
+                lacinia a ac justo. Vivamus id diam laoreet, iaculis enim at, condimentum tortor. Fusce semper ipsum est, sed.
+            </p>
+        </section>
+</div>
+
+
+{% endblock %}
